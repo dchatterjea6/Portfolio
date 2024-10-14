@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Dylan Chatterjea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset and Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    /* Header Styling */
+    #header {
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: auto;
+      background-color: black;
+    }
+
+    #header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    #header .brand {
+      text-align: left;
+      margin-right: auto;
+    }
+
+    #header .brand a {
+      text-decoration: none;
+    }
+
+    #header .brand h1 {
+      color: #fff;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    #header .brand h1 span {
+      color: crimson;
+    }
+
+    #header .nav-list ul {
+      display: flex;
+      list-style-type: none;
+      margin-left: auto;
+    }
+
+    #header .nav-list ul li {
+      margin: 0 15px;
+    }
+
+    #header .nav-list ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 19px;
+      padding: 8px;
+      position: relative;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    /* Removed the underline effect */
+    #header .nav-list ul li a:hover {
+      color: crimson; /* Change text color to red on hover */
+    }
+
+    /* Gallery Section Styles */
+    #gallery {
+      padding: 100px 20px 50px;
+      background-color: #fff;
+    }
+
+    .gallery-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .gallery-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .gallery-header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: crimson;
+    }
+
+    /* Flexbox Layout */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* Gallery Item */
+    .gallery-item {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Two Images: Each takes half of the height */
+    .two-images {
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      width: 320px;
+    }
+
+    .two-images img {
+      width: 100%;
+      height: 48%;
+      object-fit: cover;
+      margin-bottom: 4%;
+    }
+
+    /* One Image: Takes full height */
+    .one-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      width: 300px;
+    }
+
+    .one-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* About Me Section */
+    #about-me {
+      padding: 50px 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    #about-me h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: crimson;
+    }
+
+    #about-me p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html">
+          <h1><span>D</span>ylan <span>C</span>hatterjea</h1>
+        </a>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li><a href="designs.html">Designs</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <div class="gallery-section">
+      <!-- Gallery Header -->
+      <div class="gallery-header">
+        <h1>Photos</h1>
+      </div>
+
+      <!-- Gallery Layout -->
+      <div class="gallery">
+        <!-- Two Images -->
+        <div class="two-images">
+          <img src="images/About me/1.jpg" alt="Photo 1" class="gallery-item">
+          <img src="images/About me/2.jpg" alt="Photo 2" class="gallery-item">
+        </div>
+
+        <!-- One Image -->
+        <div class="one-image">
+          <img src="images/About me/main.jpg" alt="Photo 3" class="gallery-item">
+        </div>
+
+        <!-- Two Images -->
+        <div class="two-images">
+          <img src="images/About me/3.jpg" alt="Photo 4" class="gallery-item">
+          <img src="images/About me/7csy343j.png" alt="Photo 5" class="gallery-item">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Gallery Section -->
+  <!-- About Me Section -->
+  <section id="about-me">
+    <div class="about-me-content">
+      <h2>About Me</h2>
+      <p>
+        I am a third-year Computational Media major attending Georgia Tech. I've been doing graphic design for 7 years where I've been able to certify in multiple design applications, 
+        but my long-term goal is to pursue a career in UI/UX design. In my free time, I enjoy
+        playing sports, drawing, and spending time with friends. I strive to balance my academic work with my love for
+        design, always aiming to grow both professionally and personally.
+      </p>
+    </div>
+  </section>
+  <!-- End About Me Section -->
+</body>
+
+</html>

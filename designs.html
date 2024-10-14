@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Chatterjea | Designs & Drawings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset and Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header Styling */
+    #header {
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: auto;
+      background-color: black;
+    }
+
+    #header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    #header .brand {
+      text-align: left;
+      margin-right: auto;
+    }
+
+    #header .brand a {
+      text-decoration: none;
+    }
+
+    #header .brand h1 {
+      color: #fff;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    #header .brand h1 span {
+      color: crimson;
+    }
+
+    #header .nav-list ul {
+      display: flex;
+      list-style-type: none;
+      margin-left: auto;
+    }
+
+    #header .nav-list ul li {
+      margin: 0 15px;
+    }
+
+    #header .nav-list ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 19px;
+      padding: 8px;
+      position: relative;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    /* Removed the underline effect */
+    #header .nav-list ul li a:hover {
+      color: crimson; /* Change text color to red on hover */
+    }
+
+    /* Designs Section */
+    #designs {
+      padding: 50px 0;
+      background-color: #f0f0f0;
+    }
+
+    #designs .designs-header h1 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #000000;
+      font-size: 3rem;
+    }
+
+    .design-category {
+      margin-bottom: 50px;
+    }
+
+    .design-category h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: crimson;
+      text-transform: uppercase;
+    }
+
+    /* Add padding to move titles down */
+    #digital-drawings h2,
+    #hand-drawings h2 {
+      padding-top: 60px; /* Move title down below the fixed header */
+    }
+
+    .all-digital-drawings,
+    .all-hand-drawings {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .design-item {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .design-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .design-img img {
+      width: 100%;
+      height: 400px; /* Ensure all images have the same height */
+      border-bottom: 3px solid #000000;
+      object-fit: cover;
+    }
+
+    .design-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .design-info h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: crimson;
+    }
+
+    .design-info p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+<section id="header">
+    <div class="container">
+        <div class="brand">
+            <a href="index.html">
+                <h1><span>D</span>ylan <span>C</span>hatterjea</h1>
+            </a>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li><a href="designs.html" data-after="Designs">Designs</a></li>
+                <li><a href="projects.html" data-after="Projects">Projects</a></li>
+                <li><a href="about.html" data-after="About">About</a></li>
+                <li><a href="contact.html" data-after="Contact">Contact</a></li> <!-- Updated to link to contact.html -->
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Header -->
+
+
+<!-- Personal Message Section -->
+<section id="message" style="padding-top: 100px;">
+    <div class="message-container">
+      <p style="text-align: center; font-size: 1.1rem; margin-bottom: 20px; color: #666;">
+        These drawings are a reflection of my creative exploration and interests. I do these for fun, 
+        using art to express my passion for pop culture, gaming, and the world around me. I hope you enjoy 
+        these pieces as much as I enjoy creating them!
+      </p>
+      <p style="text-align: center; font-size: 1.1rem; color: #666;">
+        If you would like to see my projects where I have used my design skills, you can view my portfolio on the home page or click 'Projects' above!
+      </p>
+    </div>
+  </section>
+<!-- End Personal Message Section -->
+
+
+  <!-- Digital Drawings Section -->
+  <section id="digital-drawings">
+    <div class="design-category">
+      <h2>Digital Drawings</h2>
+      <div class="all-digital-drawings">
+        <!-- Digital Drawing Placeholders -->
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 5.jpg" alt="Digital Drawing 1">
+          </div>
+          <div class="design-info">
+            <h3>Royal and Pineapple Fam</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 6.jpg" alt="Digital Drawing 2">
+          </div>
+          <div class="design-info">
+            <h3>Retro Mario</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 1.jpg" alt="Digital Drawing 3">
+          </div>
+          <div class="design-info">
+            <h3>Selfie</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 8.JPG" alt="Digital Drawing 4">
+          </div>
+          <div class="design-info">
+            <h3>Canopy House</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 7.JPG" alt="Digital Drawing 5">
+          </div>
+          <div class="design-info">
+            <h3>Under the Canopy</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 4.jpg" alt="Digital Drawing 6">
+          </div>
+          <div class="design-info">
+            <h3>AKPsi Families Hidden</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 3.jpg" alt="Digital Drawing 7">
+          </div>
+          <div class="design-info">
+            <h3>Ralph Lauren Buzz</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 9.JPG" alt="Digital Drawing 8">
+          </div>
+          <div class="design-info">
+            <h3>AKPsi T-Shirt Design</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 2.jpg" alt="Digital Drawing 9">
+          </div>
+          <div class="design-info">
+            <h3>Luigi Domain Expansion</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 10.jpg" alt="Digital Drawing 10">
+          </div>
+          <div class="design-info">
+            <h3>Stargazing</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\DD 11.jpg" alt="Digital Drawing 11">
+          </div>
+          <div class="design-info">
+            <h3>Mandelorian and the Peanuts</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\Wallpaper Project.jpg" alt="Digital Drawing 12">
+          </div>
+          <div class="design-info">
+            <h3>Spongebob and Friends Sunset</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Digital Drawings Section -->
+
+  <!-- Hand Drawings Section -->
+  <section id="hand-drawings">
+    <div class="design-category">
+      <h2>Hand Drawings</h2>
+      <div class="all-hand-drawings">
+        <!-- Hand Drawing Placeholders -->
+        <!-- Repeat for 12 total boxes -->
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\1.jpg" alt="Hand Drawing 1">
+          </div>
+          <div class="design-info">
+            <h3>Haikyuu</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\2.jpg" alt="Hand Drawing 2">
+          </div>
+          <div class="design-info">
+            <h3>Zenitsu</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\4.jpg" alt="Hand Drawing 3">
+          </div>
+          <div class="Pichu and Dragonite">
+            <h3>Jett</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\5.jpg" alt="Hand Drawing 4">
+          </div>
+          <div class="design-info">
+            <h3>Late Night</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\6.jpg" alt="Hand Drawing 5">
+          </div>
+          <div class="design-info">
+            <h3>Club Penguin</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\7.jpg" alt="Hand Drawing 6">
+          </div>
+          <div class="design-info">
+            <h3>Snorlax Card</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\8.jpg" alt="Hand Drawing 7">
+          </div>
+          <div class="design-info">
+            <h3>JJK Drawing</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\9.jpg" alt="Hand Drawing 8">
+          </div>
+          <div class="design-info">
+            <h3>Panda Thoughts</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\10.jpg" alt="Hand Drawing 9">
+          </div>
+          <div class="design-info">
+            <h3>Peaking Through the Paper</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\11.jpg" alt="Hand Drawing 10">
+          </div>
+          <div class="design-info">
+            <h3>City View</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\12.jpg" alt="Hand Drawing 11">
+          </div>
+          <div class="design-info">
+            <h3>I am Groot</h3>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-img">
+            <img src="images\Drawings\3.jpg" alt="Hand Drawing 12">
+          </div>
+          <div class="design-info">
+            <h3>Jett</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hand Drawings Section -->
+</body>
+
+</html>
