@@ -196,6 +196,20 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
+.header .brand {
+  display: flex;
+  align-items: center;
+}
+
+.github-logo {
+  width: 30px;  /* Adjust the size as needed */
+  height: auto;
+  margin-left: 10px; /* Space between name and logo */
+}
+
+.github-link {
+  display: inline-block;
+}
 /* End Header section */
 
 /* Hero Section */
