@@ -169,9 +169,9 @@
     }
     .projects-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  padding: 20px 0;
+  padding: 0px;
 }
 
 .projects-grid a {
@@ -180,9 +180,9 @@
 }
 
 .projects-grid img {
-  width: 100%;
-  max-width: 150px; /* Adjust as necessary */
-  height: 150px; /* Set a fixed height for uniformity */
+  width: 200%;
+  max-width: 200px; /* Adjust as necessary */
+  height: 100px; /* Set a fixed height for uniformity */
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -194,6 +194,38 @@
 .projects-grid img.clicked {
   transform: scale(1.1); /* Slightly larger scale on click */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add shadow on click */
+}
+.projects-grid p {
+  font-family: 'Montserrat', sans-serif; /* Use a clean, modern font */
+  font-size: 16px; /* Adjust font size for better readability */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 10px; /* Add some space between the image and text */
+  color: #333; /* Use a dark gray for a modern look */
+  line-height: 1.4; /* Improve line spacing for better readability */
+  transition: color 0.3s ease; /* Add a hover effect for interactivity */
+}
+
+.projects-grid a:hover p {
+  color: #e74c3c; /* Change text color on hover for a dynamic effect */
+}
+
+/* 3x1 Grid for the Project Overview */
+.grid-3x1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-2x1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
 }
 
 /* Cheers to Recycling - Image Grid Layout */
@@ -312,18 +344,27 @@
       <div class="projects-grid">
         <a href="#atlanta-food-finder">
           <img src="images\Atlanta Food Finder thumb.JPG" alt="Project 1">
+          <p>Atlanta Food Finder App</p>
+        </a>
+        <a href="#party-carpenter">
+          <img src="images\Party Carpentar\Final.JPG" alt="Project 2">
+          <p>Party Carpentar T-Shirt</p>
         </a>
         <a href="#hypertransic">
-          <img src="images\future app\home.JPG" alt="Project 2">
+          <img src="images\future app\home.JPG" alt="Project 3">
+          <p>Hypertransic Futuristic App Design</p>
         </a>
         <a href="#cheers-to-recycling">
-          <img src="images\cheers2recycling.JPG" alt="Project 3">
+          <img src="images\cheers2recycling.JPG" alt="Project 4">
+          <p>Cheers to Recycling Logo Design</p>
         </a>
         <a href="#semantic-safari">
-          <img src="images\Semantic Safari\Home.JPG" alt="Project 4">
+          <img src="images\Semantic Safari\Home.JPG" alt="Project 5">
+          <p>Semantic Safari Game Design</p>
         </a>
         <a href="#connect-4-manual">
-          <img src="images\Connect 4\first.JPG" alt="Project 5">
+          <img src="images\Connect 4\first.JPG" alt="Project 6">
+          <p>Connect 4: Intro to Java Manual</p>
         </a>
       </div>
       
@@ -403,9 +444,55 @@
             </p>
           </div>
         </div>
-
-        
     </section>
+
+    <!-- Party Carpenter Section -->
+<section id="party-carpenter">
+  <div class="projects-section">
+    <div class="projects-header">
+      <h1>Party Carpenter</h1>
+    </div>
+    <div class="project-description">
+      <h2>Project Overview</h2>
+      <p>
+        "Party Carpenter" was a fun T-shirt design project for a co-worker who wanted something special for a woodworking conference. He asked for a design that would include Jesus, have a fun vibe, and resemble a logo from Monday Night Brewing, a brand he enjoys. We worked closely, having back-to-back conversations, making adjustments, and refining the layout to create the perfect design.
+      </p>
+    </div>
+
+    <!-- Image Grid for Party Carpentar -->
+    <div class="project-images">
+      <div class="image-item">
+        <img src="images\Party Carpentar\MN.png" alt="Home Screen">
+      </div>
+      <div class="image-item">
+        <img src="images\Party Carpentar\PC.png" alt="Hoverboard Option">
+      </div>
+      <div class="image-item">
+        <img src="images\Party Carpentar\Staff_Blue.png" alt="Virtual Pickup">
+      </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="project-description">
+      <h2>Conclusion</h2>
+      <p>
+        After several revisions, we finalized the design that captured the right balance of humor and creativity, making it perfect for the woodworking event. He also told me after how much everyone loved the design, and gave me my own t-shirt with the design on it to show his apprecatiation.
+      </p>
+    </div>
+    
+    <!-- Second Image Grid -->
+    <div class="project-images">
+      <div class="image-item">
+        <img src="images\Party Carpentar\revised 2.JPG" alt="Payment Screen">
+      </div>
+      <div class="image-item">
+        <img src="images\Party Carpentar\revised 1.JPG" alt="Hyperloop Unlocked">
+      </div>
+      <div class="image-item">
+        <img src="images\Party Carpentar\Final.JPG" alt="Time Schedule">
+      </div>
+    </div>
+
         <!-- Hypertransic App Section -->
 <section id="hypertransic">
     <div class="projects-section">
